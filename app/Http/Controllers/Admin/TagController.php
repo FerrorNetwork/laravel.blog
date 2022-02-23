@@ -6,9 +6,12 @@ use App\Tag;
 use App\Http\Requests\StoreCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class TagController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -16,6 +19,7 @@ class TagController extends Controller
      */
     public function index()
     {
+
         $tag = Tag::paginate(10);
         return view('admin.tags.index', compact('tag'));
     }

@@ -8,6 +8,7 @@ use App\Post;
 use App\Tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
@@ -21,7 +22,7 @@ class PostController extends Controller
     {
 
         $posts = Post::with('category', 'tags')->paginate(10);
-        return view('admin.posts.index', compact('posts'));
+        return view('admin.posts.index', compact('posts' ));
     }
 
     /**

@@ -6,6 +6,7 @@ use App\Category;
 use App\Http\Requests\StoreCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class CategoryController extends Controller
 {
@@ -16,8 +17,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
+
         $categories = Category::paginate(10);
-        return view('admin.categories.index', compact('categories'));
+        return view('admin.categories.index', compact('categories' ));
     }
 
     /**
