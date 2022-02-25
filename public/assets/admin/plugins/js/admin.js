@@ -6847,6 +6847,7 @@ S2.define('jquery.select2',[
 
 (function ($) {
   'use strict'
+
     $('.select2').select2()
 
   setTimeout(function () {
