@@ -25,20 +25,22 @@
 
     @include('layouts.navbar')
 
-    @yield('header')
+    @yield('page-title')
 
-    <section class="section lb @if(!Request::is('/')) m3rem @endif">
+    <section class="section lb">
         <div class="container">
             <div class="row">
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    @include('layouts.sidebar')
+                </div><!-- end col -->
+
                 <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
 
                     @yield('content')
 
                 </div><!-- end col -->
 
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                    @include('layouts.sidebar')
-                </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </section>
@@ -167,3 +169,4 @@
 
 </body>
 </html>
+

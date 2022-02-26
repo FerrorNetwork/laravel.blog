@@ -1,8 +1,7 @@
 {
-    "/assets/admin/plugins/css/admin.css": "/assets/admin/plugins/css/admin.css",
-    "/assets/admin/plugins/js/admin.js": "/assets/admin/plugins/js/admin.js",
-    "/assets/admin/plugins/css/adminlte.min.css.map": "/assets/admin/plugins/css/adminlte.min.css.map",
-    "/assets/admin/plugins/js/adminlte.min.js.map": "/assets/admin/plugins/js/adminlte.min.js.map",
+    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css",
+    "/assets/admin/js/admin.js": "/assets/admin/js/admin.js",
+    "/assets/admin/css/adminlte.min.css.map": "/assets/admin/css/adminlte.min.css.map",
     "/assets/front/css/front.css": "/assets/front/css/front.css",
     "/assets/front/js/front.js": "/assets/front/js/front.js"
 }

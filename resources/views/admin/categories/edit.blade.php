@@ -1,7 +1,6 @@
 @extends('admin.layouts.layout')
 
 @section('content')
-
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
@@ -21,7 +20,6 @@
 
     <!-- Main content -->
     <section class="content">
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -31,12 +29,12 @@
                         </div>
                         <!-- /.card-header -->
 
-                        <form role="form" method="post" action="{{ route('categories.update', $category->id) }}">
+                        <form role="form" method="post" action="{{ route('categories.update', ['category' => $category->id]) }}">
                             @csrf
                             @method('PUT')
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="title">Название категории</label>
+                                    <label for="title">Название</label>
                                     <input type="text" name="title"
                                            class="form-control @error('title') is-invalid @enderror" id="title"
                                            value="{{ $category->title }}">
@@ -56,11 +54,8 @@
                 <!-- /.col -->
             </div>
             <!-- /.row -->
-        </div>
-
-
+        </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
 @endsection
 

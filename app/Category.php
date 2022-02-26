@@ -9,10 +9,10 @@ class Category extends Model
 {
     use Sluggable;
 
-    protected  $fillable = ['title'];
+    protected $fillable = ['title'];
 
-
-    public function posts(){
+    public function posts()
+    {
         return $this->hasMany(Post::class);
     }
 
@@ -21,7 +21,7 @@ class Category extends Model
      *
      * @return array
      */
-    public function sluggable(): array
+    public function sluggable()
     {
         return [
             'slug' => [
@@ -29,4 +29,6 @@ class Category extends Model
             ]
         ];
     }
+
 }
+

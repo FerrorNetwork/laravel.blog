@@ -1,3 +1,2 @@
-RewriteEngine on
-RewriteRule ^$ public/ [L]
-RewriteRule ((?s).*) public/$1 [L]
+RewriteEngine On
+RewriteRule (.*) /public/$1 [L]
